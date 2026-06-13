@@ -1,5 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Local Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <div id="auth">
-  <h2>Local Marketplace Login</h2>
+  <h2>Enter Marketplace</h2>
   <input id="username" placeholder="Enter your name">
   <button onclick="login()">Enter</button>
 </div>
@@ -7,19 +16,14 @@
 <div id="app" style="display:none;">
 
   <h1>Local Marketplace</h1>
-
-  <div class="tabs">
-    <button onclick="setMode('buy')">Buy & Sell</button>
-    <button onclick="setMode('services')">Services</button>
-    <button onclick="showAll()">All</button>
-  </div>
+  <p>Buy, sell, and find local services</p>
 
   <div class="container">
 
     <div class="form">
       <h2>Post Listing</h2>
 
-      <input id="title" placeholder="What are you offering?">
+      <input id="title" placeholder="Item / Service">
       <input id="price" placeholder="Price">
       <input id="contact" placeholder="Contact">
       <input id="location" placeholder="Town">
@@ -40,3 +44,7 @@
   </div>
 
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
